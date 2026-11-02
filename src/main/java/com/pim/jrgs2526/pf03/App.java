@@ -10,12 +10,12 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
-
+    public static String errorNota = "Error al calcular nota";
     public int calcularNota(int nota) {
         if (nota >= 0 && nota <= 4)
             return -1;
         if (nota >= 5 && nota <= 10)
             return 1;
-        throw new IllegalArgumentException("Error al calcular nota");
+        throw new IllegalArgumentException(errorNota);
     }
 }

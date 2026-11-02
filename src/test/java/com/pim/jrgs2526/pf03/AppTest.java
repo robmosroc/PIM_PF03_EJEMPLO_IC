@@ -4,6 +4,8 @@ package com.pim.jrgs2526.pf03;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static com.pim.jrgs2526.pf03.App.errorNota;
+
 /**
  * Unit test for simple App.
  */
@@ -29,7 +31,7 @@ public class AppTest {
             int resultado = main.calcularNota(63);
         }
         catch (IllegalArgumentException e) {
-            Assertions.assertEquals("Error al calcular la nota", e.getMessage());
+            Assertions.assertEquals(errorNota, e.getMessage());
             return;
         }
         Assertions.fail();
