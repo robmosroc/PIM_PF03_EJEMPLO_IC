@@ -31,7 +31,7 @@ public class AppTest {
             int resultado = main.calcularNota(63);
         }
         catch (IllegalArgumentException e) {
-            Assertions.assertEquals(errorNota, e.getMessage());
+            Assertions.assertEquals(errorNota, e.getMessage() );
             return;
         }
         Assertions.fail();
